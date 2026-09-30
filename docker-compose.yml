@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  internetbanking:
+    image: damashekar/ib-image:latest
+    ports:
+      - "8081:80"
+    deploy:
+      replicas: 3
+  mobilebanking:
+    image: damashekar/mb-image:latest
+    ports:
+      - "8082:80"
+    deploy:
+      replicas: 3
+  insurance:
+    image: damashekar/insurance-image:latest
+    ports:
+      - "8083:80"
+    deploy:
+      replicas: 3
+  loan:
+    image: damashekar/loans-image:latest
+    ports:
+      - "8084:80"
+    deploy:
+      replicas: 3
